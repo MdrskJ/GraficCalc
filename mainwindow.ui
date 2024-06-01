@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="g_label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>825</width>
+      <height>700</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: aqua;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="x_min_text">
+    <property name="geometry">
+     <rect>
+      <x>867</x>
+      <y>132</y>
+      <width>63</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>min по X</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="x_max_text">
+    <property name="geometry">
+     <rect>
+      <x>867</x>
+      <y>160</y>
+      <width>63</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>max по X</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="y_max_text">
+    <property name="geometry">
+     <rect>
+      <x>867</x>
+      <y>221</y>
+      <width>63</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>max по Y</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="y_min_text">
+    <property name="geometry">
+     <rect>
+      <x>867</x>
+      <y>192</y>
+      <width>63</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>min по Y</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="x_min_in">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>127</y>
+      <width>113</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-10</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="x_max_in">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>157</y>
+      <width>113</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>10</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="y_min_in">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>187</y>
+      <width>113</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-9</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="y_max_in">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>217</y>
+      <width>113</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>9</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="input_f_x">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>68</y>
+      <width>171</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="name_f_x">
+    <property name="geometry">
+     <rect>
+      <x>844</x>
+      <y>65</y>
+      <width>63</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>f(x) = </string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="output_test">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>387</y>
+      <width>161</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="name_output_test">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>390</y>
+      <width>63</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>output:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="x_shag_in">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>260</y>
+      <width>113</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="x_shag_text">
+    <property name="geometry">
+     <rect>
+      <x>867</x>
+      <y>265</y>
+      <width>63</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>шаг по X</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="y_shag_text">
+    <property name="geometry">
+     <rect>
+      <x>867</x>
+      <y>293</y>
+      <width>63</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>шаг по Y</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="y_shag_in">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>290</y>
+      <width>113</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

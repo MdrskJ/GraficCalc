@@ -1,0 +1,38 @@
+QWidget#centralwidget {
+    background-color:
+    #ede6e3;
+
+}
+
+QPushButton#calc_btn {
+    background-color: #dadad9;
+    color: black;
+    border-radius: 5;
+}
+
+QPushButton#calc_btn:hover {
+    background-color: #f06449;
+    color: white;
+}
+
+QPushButton#calc_btn:pressed {
+    background-color: #fafafa;
+    color: black;
+}
+
+QLabel {
+    color: black;
+}
+
+QLineEdit {
+    background-color: #dadad9;
+    color: black;
+    selection-background-color: #5bc3eb;
+    border: none;
+    border-radius: 5px;
+}
+
+QLineEdit:hover {
+    background-color: #fafafa;
+    border-radius: 5px;
+}
