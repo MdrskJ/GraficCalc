@@ -23,14 +23,20 @@ void drawAxes(double x_g_min, double x_g_max, double y_g_min, double y_g_max,
     axe_path.moveTo(ord_x, y_g_min);
     axe_path.lineTo(ord_x + 5, y_g_min + 5);
 
+    QFont font("Arial", 10);
+
     // рисуем разметку оси y от начала координат вверх и вниз
     for (int y = y_shag; k_y * (y - y_max) > y_g_min + 10; y += y_shag) {
         axe_path.moveTo(ord_x - 5, k_y * (y - y_max));
         axe_path.lineTo(ord_x + 5, k_y * (y - y_max));
+        axe_path.addText(ord_x - 20, k_y * (y - y_max) + 3, font, QString::number(y));
+
+
     }
     for (int y = -y_shag; k_y * (y - y_max) < y_g_max; y -= y_shag) {
         axe_path.moveTo(ord_x - 5, k_y * (y - y_max));
         axe_path.lineTo(ord_x + 5, k_y * (y - y_max));
+        axe_path.addText(ord_x - 20, k_y * (y - y_max) + 3, font, QString::number(y));
     }
 
     // рисуем ось x и стрелочку
@@ -45,10 +51,12 @@ void drawAxes(double x_g_min, double x_g_max, double y_g_min, double y_g_max,
     for (int x = x_shag; k_x * (x - x_min) < x_g_max - 10; x += x_shag) {
         axe_path.moveTo(k_x * (x - x_min), abs_y - 5);
         axe_path.lineTo(k_x * (x - x_min), abs_y + 5);
+        axe_path.addText(k_x * (x - x_min) - 3, abs_y + 20, font, QString::number(x));
     }
     for (int x = -x_shag; k_x * (x - x_min) > 0; x -= x_shag) {
         axe_path.moveTo(k_x * (x - x_min), abs_y - 5);
         axe_path.lineTo(k_x * (x - x_min), abs_y + 5);
+        axe_path.addText(k_x * (x - x_min) - 3, abs_y + 20, font, QString::number(x));
     }
 }
 
